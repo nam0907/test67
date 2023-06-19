@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import Todolist from './Todolist';
 import TodolistHeader from './TodolistHeader';
+import Footer from './Footer';
 import './style.css'
 const App = () => {
   const [task,setTask]=useState("");
@@ -13,7 +14,8 @@ const App = () => {
       isComplied:false,
     }
     setList([...list,newTask]);
-    setTask("")
+    setTask("");
+    localStorage.setItem("task",JSON.stringify(list));
 }
 
   return (
@@ -28,6 +30,7 @@ const App = () => {
     </form>
     </div>
     </div>
+    <Footer/>
     </div>
   );
 };

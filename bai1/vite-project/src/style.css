@@ -44,6 +44,7 @@ body,
   padding: 10px;
   flex: 1;
   height: 0px;
+  overflow-y: scroll;
 }
 
 .todo-item-container {
@@ -53,6 +54,7 @@ body,
   font-weight: 100;
   display: flex;
   align-items: center;
+  overflow-y: hidden;
 }
 
 

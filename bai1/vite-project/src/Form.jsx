@@ -10,7 +10,6 @@ const Form = () => {
       isComplied:false,
     }
     setList([...list,newTask]);
-    localStorage.setItem("task",JSON.stringify(list))
     setTask("")
   }
   return (
